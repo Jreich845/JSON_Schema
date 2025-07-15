@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Courier Code Schema",
+  "type": "object",
+  "properties": {
+    "courier_code": {
+      "type": "string",
+      "description": "The unique code used to identify the courier"
+    }
+  },
+  "required": [
+    "courier_code"
+  ]
+}
