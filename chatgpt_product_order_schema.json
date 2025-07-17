@@ -24,6 +24,10 @@
     "shipping_option": {
       "type": "string",
       "description": "The selected or available shipping option (e.g., air freight, ground, express)"
+    },
+    "price": {
+      "type": "string",
+      "description": "The price of the product, including currency if applicable (e.g., $250, 100 EUR)"
     }
   },
   "required": [
@@ -32,6 +36,7 @@
     "product_name",
     "pack_size",
     "lead_time",
-    "shipping_option"
+    "shipping_option",
+    "price"
   ]
 }
