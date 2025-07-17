@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "description": "The name of the company providing the product or service"
+    },
+    "customer_name": {
+      "type": "string",
+      "description": "The name of the customer or client"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "The name of the product being discussed or ordered"
+    },
+    "pack_size": {
+      "type": "string",
+      "description": "The packaging size or unit format of the product (e.g., 25kg, 1L bottle)"
+    },
+    "lead_time": {
+      "type": "string",
+      "description": "The expected lead time or delivery time frame for the product"
+    },
+    "shipping_option": {
+      "type": "string",
+      "description": "The selected or available shipping option (e.g., air freight, ground, express)"
+    }
+  },
+  "required": [
+    "company_name",
+    "customer_name",
+    "product_name",
+    "pack_size",
+    "lead_time",
+    "shipping_option"
+  ]
+}
