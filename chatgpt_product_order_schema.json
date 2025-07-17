@@ -14,8 +14,11 @@
       "description": "The name of the product being discussed or ordered"
     },
     "pack_size": {
-      "type": "string",
-      "description": "The packaging size or unit format of the product (e.g., 25kg, 1L bottle)"
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of packaging sizes or unit formats of the product (e.g., 25kg, 1L bottle)"
     },
     "lead_time": {
       "type": "string",
@@ -26,8 +29,18 @@
       "description": "The selected or available shipping option (e.g., air freight, ground, express)"
     },
     "price": {
-      "type": "string",
-      "description": "The price of the product, including currency if applicable (e.g., $250, 100 EUR)"
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of prices for the product, including currency if applicable (e.g., $250, 100 EUR)"
+    },
+    "quantity": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of quantities for each product-pack size combination"
     }
   },
   "required": [
@@ -37,6 +50,7 @@
     "pack_size",
     "lead_time",
     "shipping_option",
-    "price"
+    "price",
+    "quantity"
   ]
 }
