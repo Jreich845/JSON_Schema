@@ -1,0 +1,17 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChemicalResearchResponse",
+  "type": "object",
+  "properties": {
+    "Main Answer": {
+      "type": "string",
+      "description": "The in-depth, engaging, and well-structured response about the chemical, covering definition, practical uses, fun facts, unique aspects, relevance, and trends as described in the prompt."
+    },
+    "Summary": {
+      "type": "string",
+      "description": "A concise summary of the information and product."
+    }
+  },
+  "required": ["Main Answer", "Summary"]
+}
