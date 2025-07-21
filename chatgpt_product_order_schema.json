@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
     "company_name": {
@@ -14,11 +15,12 @@
       "description": "The name of the product being discussed or ordered"
     },
     "pack_size": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "A list of packaging sizes or unit formats of the product (e.g., 25kg, 1L bottle)"
+      "type": "number",
+      "description": "The numerical value of the packaging size (e.g., 25, 1)"
+    },
+    "pack_size_unit": {
+      "type": "string",
+      "description": "The unit for the pack size (e.g., Lbs, Kgs)"
     },
     "lead_time": {
       "type": "string",
@@ -29,18 +31,20 @@
       "description": "The selected or available shipping option (e.g., air freight, ground, express)"
     },
     "price": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "A list of prices for the product, including currency if applicable (e.g., $250, 100 EUR)"
+      "type": "number",
+      "description": "The price of the product (e.g., 250, 100.5)"
+    },
+    "price_unit": {
+      "type": "string",
+      "description": "The unit for the price (e.g., $/kg, $/lb)"
     },
     "quantity": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "A list of quantities for each product-pack size combination"
+      "type": "number",
+      "description": "The number of units being ordered"
+    },
+    "quantity_unit": {
+      "type": "string",
+      "description": "The unit for the quantity (e.g., drum, bottle)"
     }
   },
   "required": [
@@ -48,9 +52,12 @@
     "customer_name",
     "product_name",
     "pack_size",
+    "pack_size_unit",
     "lead_time",
     "shipping_option",
     "price",
-    "quantity"
+    "price_unit",
+    "quantity",
+    "quantity_unit"
   ]
 }
