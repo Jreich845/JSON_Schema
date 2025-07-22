@@ -3,51 +3,87 @@
   "type": "object",
   "properties": {
     "company_name": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The name of the company providing the product or service"
     },
     "customer_name": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The name of the customer or client"
     },
     "product_name": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The name of the product being discussed or ordered"
     },
     "pack_size": {
-      "type": "number",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
       "description": "The numerical value of the packaging size (e.g., 25, 1)"
     },
     "pack_size_unit": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The unit for the pack size (e.g., Lbs, Kgs)"
     },
     "lead_time": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The expected lead time or delivery time frame for the product"
     },
     "shipping_option": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The selected or available shipping option (e.g., air freight, ground, express)"
     },
     "price": {
-      "type": "number",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
       "description": "The price of the product (e.g., 250, 100.5)"
     },
     "price_unit": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The unit for the price (e.g., $/kg, $/lb)"
     },
     "quantity": {
-      "type": "number",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
       "description": "The number of units being ordered"
     },
     "quantity_unit": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The unit for the quantity (e.g., kg, lbs, ozs, etc.)"
     },
     "packing_type": {
-      "type": "string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
       "description": "The physical packaging type used for shipping (e.g., drum, bottle, bag)"
     }
   },
