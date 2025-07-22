@@ -44,7 +44,11 @@
     },
     "quantity_unit": {
       "type": "string",
-      "description": "The unit for the quantity (e.g., drum, bottle)"
+      "description": "The unit for the quantity (e.g., kg, lbs, ozs, etc.)"
+    },
+    "packing_type": {
+      "type": "string",
+      "description": "The physical packaging type used for shipping (e.g., drum, bottle, bag)"
     }
   },
   "required": [
@@ -58,6 +62,7 @@
     "price",
     "price_unit",
     "quantity",
-    "quantity_unit"
+    "quantity_unit",
+    "packing_type"
   ]
 }
