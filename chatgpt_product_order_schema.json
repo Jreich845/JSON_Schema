@@ -85,14 +85,14 @@
         "type": "string"
       },
       "description": "The physical packaging type used for shipping (e.g., drum, bottle, bag)"
-    }
-  },
-  "Alternate Company Names": {
+    },
+    "Alternate Company Names": {
       "type": "array",
       "items": {
         "type": "string"
       },
       "description": "A list of plausible alternative company names or abbreviations (e.g., ['COIM', 'COIM USA', 'COIM SpA'])"
+    }
   },
   "required": [
     "company_name",
