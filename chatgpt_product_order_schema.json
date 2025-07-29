@@ -86,7 +86,7 @@
       },
       "description": "The physical packaging type used for shipping (e.g., drum, bottle, bag)"
     },
-    "Alternate Company Names": {
+    "alternate_company_names": {
       "type": "array",
       "items": {
         "type": "string"
@@ -107,6 +107,6 @@
     "quantity",
     "quantity_unit",
     "packing_type",
-    "Alternate Company Names"
+    "alternate_company_names"
   ]
 }
