@@ -92,6 +92,20 @@
         "type": "string"
       },
       "description": "A list of plausible alternative company names or abbreviations (e.g., ['COIM', 'COIM USA', 'COIM SpA'])"
+    },
+    "cas_numbers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The CAS Numbers of the product(s) as displayed in the email body"
+    },
+    "cas_number_exists": {
+      "type": "array",
+      "items": {
+        "type": "boolean"
+      },
+      "description": "A True or False statement as to whether or not the CAS number was able to be extracted from the email body. True if it was extracted and False if not"
     }
   },
   "required": [
@@ -107,6 +121,8 @@
     "quantity",
     "quantity_unit",
     "packing_type",
-    "alternate_company_names"
+    "alternate_company_names",
+    "cas_numbers",
+    "cas_number_exists"
   ]
 }
