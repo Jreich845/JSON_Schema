@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "SO Number": {
+      "type": "string",
+      "description": "Sales Order Number for the transaction. It is also the name of the BOL PDF."
+    },
+    "Tracking Number": {
+      "type": "string",
+      "description": "The tracking number for tracking the package provided by the courier."
+    },
+    "Carrier": {
+      "type": "string",
+      "description": "The name of the responsible for delivery of the parcel"
+    }
+  },
+  "required": [
+    "SO Number",
+    "Tracking Number",
+    "Carrier"
+  ]
+}
