@@ -13,11 +13,21 @@
     "Carrier": {
       "type": "string",
       "description": "The name of the responsible for delivery of the parcel"
+    },
+    "Customer Name": {
+      "type": "string",
+      "description": "The name of the customer associated with the sales order."
+    },
+    "Product Name": {
+      "type": "string",
+      "description": "The name of the product included in the sales order."
     }
   },
   "required": [
     "SO Number",
     "Tracking Number",
-    "Carrier"
+    "Carrier",
+    "Customer Name",
+    "Product Name"
   ]
 }
