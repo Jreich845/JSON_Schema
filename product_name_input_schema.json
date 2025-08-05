@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Product Name Input",
+    "type": "object",
+    "properties": {
+        "product_name": {
+            "type": "string",
+            "title": "Product Name",
+            "description": "Enter the name of the product."
+        }
+    },
+    "required": [
+        "product_name"
+    ]
+}
