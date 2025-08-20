@@ -1,16 +1,16 @@
 {
     "type": "object",
     "properties": {
-        "product_names": {
+        "acronyms": {
             "type": "array",
-            "title": "Product Names",
+            "title": "acronyms",
             "items": {
                 "type": "string"
             },
-            "description": "List of product names."
+            "description": "List of acronyms that describe the product names."
         }
     },
     "required": [
-        "product_names"
+        "acronyms"
     ]
 }
