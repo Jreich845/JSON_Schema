@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ChatGPT Product Name Extraction Result",
+  "description": "Schema for a Zapier output that returns the list of product names ChatGPT extracted from input text or a prior step.",
+  "type": "object",
+  "properties": {
+    "product_names": {
+      "type": "array",
+      "description": "List of product names found.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "source_summary": {
+      "type": "string",
+      "description": "Optional short summary or notes about how product names were identified (e.g., heuristics used, context)."
+    }
+  },
+  "required": [
+    "product_names"
+  ],
+  "additionalProperties": false,
+  "examples": [
+    {
+      "product_names": [
+        "Acme UltraMixer 3000",
+        "Globex Copper Pan 10\"",
+        "Initech DeskPro"
+      ],
+      "source_summary": "Parsed from invoice text; matched capitalized noun phrases and known product dictionary."
+    },
+    {
+      "product_names": [],
+      "source_summary": "No recognizable product names found."
+    }
+  ]
+}
